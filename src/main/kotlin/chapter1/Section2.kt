@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
  */
 
 /*
-// [리스트 2.3] 간단한 자바 클래스 Person (컴파일 에러)
+// [리스트 2.3] 간단한 자바 클래스 Person
 public class Person {
     private final String name;
 
@@ -44,7 +44,7 @@ class Person(
  */
 
 /*
-// [리스트 2.6] 자바에서 Person 클래스를 사용하는 방법 (컴파일 에러)
+// [리스트 2.6] 자바에서 Person 클래스를 사용하는 방법
 fun main() {
     Person person = new Person("Bob", true);
     System.out.println(person.getName());
@@ -119,7 +119,7 @@ enum class Color(
 // [리스트 2.12] when을 사용해 올바른 enum 값 찾기
 // 79 페이지 "switch" 단어 오타
 fun getMnemonic(color: Color) =
-    when(color) {
+    when (color) {
         Color.RED -> "Richard"
         Color.ORANGE -> "Of"
         Color.YELLOW -> "York"
@@ -141,7 +141,7 @@ fun getWarmth(color: Color) = when (color) {
 
 /*
 // [리스트 2.14] enum 상수 값을 임포트해서 enum 클래스 수식자 없이 enum 사용하기
-fun getWarmth(color: Color) = when(color) {
+fun getWarmth(color: Color) = when (color) {
     RED, ORANGE, YELLOW -> "warm"
     GREEN -> "netural"
     BLUE, INDIGO, VIOLET -> "cold"
@@ -151,7 +151,7 @@ fun getWarmth(color: Color) = when(color) {
 /*
 // [리스트 2.15] when의 분기 조건에 여러 다른 객체 사용하기
 fun mix(c1: Color, c2: Color) =
-    when(setOf(c1, c2)) {
+    when (setOf(c1, c2)) {
         setOf(RED, YELLOW) -> ORANGE
         setOf(YELLOW, BLUE) -> GREEN
         setOf(BLUE, VIOLET) -> INDIGO
@@ -206,7 +206,7 @@ fun eval(e: Expr): Int =
 /*
 // [리스트 2.20] if 중첩 대신 when 사용하기
 fun eval(e: Expr): Int =
-    when(e) {
+    when (e) {
         is Num -> e.value
         is Sum -> eval(e.left) + eval(e.right)
         else -> throw IllegalArgumentException("Unknown expression")
@@ -216,7 +216,7 @@ fun eval(e: Expr): Int =
 /*
 // [리스트 2.21] 분기에 복잡한 동작이 들어가 있는 when 사용하기
 fun evalWithLogging(e: Expr): Int =
-    when(e) {
+    when (e) {
         is Num -> {
             println("num: ${e.value}")
             e.value
