@@ -126,8 +126,6 @@ fun main() {
 
 /*
 // [리스트 5.13] 상위 디렉터리의 시퀀스 생성하고 사용하기
-import java.io.File
-
 fun File.isInsideHiddenDirectory() =
     generateSequence(this) { it.parentFile }.any { it.isHidden }
 

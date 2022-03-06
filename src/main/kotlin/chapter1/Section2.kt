@@ -63,8 +63,6 @@ fun main() {
 
 /*
 // [리스트 2.8] 클래스와 함수 선언을 패키지에 넣기
-import java.util.Random
-
 class Rectangle(val height: Int, val width: Int) {
     val isSquare: Boolean
         get() = height == width
@@ -262,8 +260,6 @@ fun main() {
 
 /*
 // [리스트 2.24] 맵을 초기화하고 이터레이션하기
-import java.util.*
-
 fun main() {
     val binaryReps = TreeMap<Char, String>()
 
@@ -304,9 +300,6 @@ fun main() {
 
 /*
 // [리스트 2.27] 자바와 마찬가지로 try 사용하기
-import java.io.BufferedReader
-import java.io.StringReader
-
 fun readNumber(reader: BufferedReader): Int? {
     try {
         val line = reader.readLine()
@@ -328,9 +321,6 @@ fun main() {
 
 /*
 // [리스트 2.28] try를 식으로 사용하기
-import java.io.BufferedReader
-import java.io.StringReader
-
 fun readNumber(reader: BufferedReader) {
     val number = try {
         Integer.parseInt(reader.readLine())
@@ -348,9 +338,6 @@ fun main() {
 
 /*
 // [리스트 2.29] catch에서 값 반환하기
-import java.io.BufferedReader
-import java.io.StringReader
-
 fun readNumber(reader: BufferedReader) {
     val number = try {
         Integer.parseInt(reader.readLine())

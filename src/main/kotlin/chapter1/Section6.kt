@@ -71,10 +71,6 @@ fun ignoreNulls(s: String?) {
 
 /*
 // [리스트 6.8] 스윙 액션에서 널 아님 단언 사용하기
-import java.awt.event.ActionEvent
-import javax.swing.AbstractAction
-import javax.swing.JList
-
 class CopyRowAction(val list: JList<String>) : AbstractAction() {
 
     override fun isEnabled(): Boolean =
@@ -225,8 +221,6 @@ data class Person(val name: String, val age: Int? = null) {
 
 /*
 // [리스트 6.21] 널이 될 수 있는 값으로 이뤄진 컬렉션 만들기
-import java.io.BufferedReader
-
 fun readNumbers(reader: BufferedReader): List<Int?> {
     val result = ArrayList<Int?>()
     for (line in reader.lineSequence()) {

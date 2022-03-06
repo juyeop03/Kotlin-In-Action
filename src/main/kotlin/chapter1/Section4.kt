@@ -80,8 +80,6 @@ abstract class Animated {
 
 /*
 // [리스트 4.9] 직렬화할 수 있는 상태가 있는 뷰 선언
-import java.io.Serializable
-
 interface State : Serializable
 interface View {
     fun getCurrentState(): State
@@ -119,8 +117,6 @@ class Button : View {
 
 /*
 // [리스트 4.12] 인터페이스 구현을 통해 식 표현하기
-import java.lang.IllegalArgumentException
-
 interface Expr
 class Num(val value: Int) : Expr
 class Sum(val left: Expr, val right: Expr) : Expr
@@ -346,9 +342,6 @@ fun Person.Companion.fromJSON(json: String): Person = Person("")
 
 /*
 // [리스트 4.30] 무명 객체로 이벤트 리스너 구현하기
-import java.awt.event.MouseAdapter
-import java.awt.event.MouseEvent
-
 window.addMouseListener(
     object : MouseAdapter() {
         override fun mouseClicked(e: MouseEvent?) {
@@ -363,10 +356,6 @@ window.addMouseListener(
 
 /*
 // [리스트 4.31] 무명 객체 안에서 로컬 변수 사용하기
-import java.awt.Window
-import java.awt.event.MouseAdapter
-import java.awt.event.MouseEvent
-
 fun countClicks(window: Window) {
     var clickCount = 0
 
